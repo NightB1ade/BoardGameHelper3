@@ -16,7 +16,7 @@ $(document).ready(function(){
 	var html = "";
 
 	$.get(
-		"https://nightb1ade.github.io/Board-Game-Helper/Games/GamesList.xml"
+		"{{ Games/GamesList.xml | relative_url }}"
 		,function(data){
 			BGGIDList = $(data).find("Games Game").map(function(){
 				return $(this).attr("id");
@@ -27,7 +27,7 @@ $(document).ready(function(){
 	)
 	.done(function(){
 		$.get(
-			"https://www.boardgamegeek.com/xmlapi2/thing?id=" + BGGIDList
+			"{{ site.bggapi-thing }}" + BGGIDList
 			,function(data){
 				var item = $(data).find("items item");
 
