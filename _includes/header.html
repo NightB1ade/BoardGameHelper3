@@ -11,5 +11,9 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-	<title>{{ page.title | append: " - " }}{{ site.title }}</title>
+	<title>
+		{%- if page.title != null -%}
+		{{ page.title | append: " - " }}
+		{%- endif -%}
+		{{ site.title }}</title>
 </head>
