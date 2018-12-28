@@ -16,7 +16,7 @@ $(document).ready(function(){
 	var html = "";
 
 	$.get(
-		"{{ Games/GamesList.xml | relative_url }}"
+		"{{ 'Games/GamesList.xml' | relative_url }}"
 		,function(data){
 			BGGIDList = $(data).find("Games Game").map(function(){
 				return $(this).attr("id");
