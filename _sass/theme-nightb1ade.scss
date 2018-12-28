@@ -1,1 +1,29 @@
 @import "normalize";
+
+body {
+	padding: 0;
+	margin: 0;
+	font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #f0e7d5;
+	font-weight: normal;
+	background: #252525;
+	background-attachment: fixed !important;
+	background: linear_gradient(#2a2a29, #1c1c1c);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #e8e8e8;
+	margin: 0 0 10px;
+	font-family: "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
+a {
+	color:#ffcc00;
+	font-weight:400;
+	text-decoration:none;
+
+	&:hover {
+		color: #ffeb9b;
+	}
+}
