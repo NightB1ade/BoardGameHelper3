@@ -1,4 +1,11 @@
 # Games List
 
-<div id="GamesList">
-</div>
+<table id="GamesList">
+<thead>
+<tr>
+	<th colspan="2">Game</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
