@@ -27,3 +27,66 @@ a {
 		color: #ffeb9b;
 	}
 }
+
+/*------------------------------------------------------------------------------------------------*/
+
+body {
+	padding: 0;
+	margin: 20px 10px;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	text-align: left;
+	padding: 5px 10px;
+	border-bottom: 1px solid #434343;
+	color: #b6b6b6;
+	font-family: "OpenSansSemibold", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-weight: normal;
+}
+
+td {
+	text-align: left;
+	padding: 5px 10px;
+	border-bottom: 1px solid #434343;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+section#title {
+	border: 0;
+	outline: none;
+	padding: 0 0 5px;
+
+	h1 {
+		font-family: "OpenSansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: normal;
+		font-size: 40px;
+		text-align: center;
+		line-height: 36px;
+	}
+
+	p {
+		color: #d7cfbe;
+		font-family: "OpenSansLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: normal;
+		font-size: 18px;
+		text-align: center;
+	}
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+table#GamesList {
+	img {
+		align: left;
+		max-height: 100px;
+		max-width: 100px;
+		vertical-align: middle;
+	}
+}
