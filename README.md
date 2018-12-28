@@ -1,4 +1,4 @@
-# {{ site.title }}
+# NightB1ade's Board Game Helper
 
 A little GitHub Pages website for myself to aid in the setup and play of my board (and card) games.  This utilises the Board Game Geek API to pull some additional data (e.g. thumbnails).  Most of the other parts of this have been written by myself.  I eventually intend to use the XML in the background to also drive other applications (possibly an android app version).
 
