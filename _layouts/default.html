@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-GB" }}">
+
+{% include header.html %}
+
+<body>
+<section id="title">
+	<h1>{{ page.title | default: site.title }}</h1>
+	{%- if page.title != null %}
+	<p>{{ site.title }}</p>
+	{%- endif %}
+</section>
+
+<section>
+{{ content }}
+</section>
+
+</body>
+
+</html>
