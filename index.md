@@ -35,8 +35,10 @@ $(document).ready(function(){
 				item.each(function(i,v){
 html += ""
 + "		<td>"
-+ "			<div class='thumbnail'><img src='" + $(v).find("thumbnail").text() + "'></div>"
-+ "			<div>" + $(v).find("name[type='primary']").attr("value") + "</div>"
++ "			<a href='" + {{ 'Games/Game.md' | relative_url }} + "?" + $(v).attr("id") + "'>"
++ "				<div class='thumbnail'><img src='" + $(v).find("thumbnail").text() + "'></div>"
++ "				<div>" + $(v).find("name[type='primary']").attr("value") + "</div>"
++ "			</a>"
 + "		</td>";
 				});
 			}
