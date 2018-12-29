@@ -1,4 +1,4 @@
-# Games List
+<h1>Games List</h1>
 
 <table id="GamesList">
 <tbody>
