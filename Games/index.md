@@ -1,5 +1,6 @@
 ---
 title: Game
+layout: game
 ---
 
 <img id="thumbnail">
