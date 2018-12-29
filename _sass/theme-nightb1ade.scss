@@ -83,10 +83,28 @@ section#title {
 /*------------------------------------------------------------------------------------------------*/
 
 table#GamesList {
-	img {
-		align: left;
-		max-height: 100px;
-		max-width: 100px;
+	table-layout: fixed;
+
+	td {
+		column-width: 340px;
 		vertical-align: middle;
+		display: inline-block;
+	}
+
+	div {
+		display: inline-block;
+
+		&.thumbnail {
+			height: 100px;
+			margin: 0 10px 0 0;
+			width: 100px;
+
+			img {
+				align: left;
+				max-height: 100px;
+				max-width: 100px;
+				vertical-align: middle;
+			}
+		}
 	}
 }

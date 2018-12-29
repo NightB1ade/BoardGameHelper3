@@ -1,12 +1,9 @@
 # Games List
 
 <table id="GamesList">
-<thead>
-	<tr>
-		<th colspan="2">Game</th>
-	</tr>
-</thead>
 <tbody>
+	<tr>
+	</tr>
 </tbody>
 </table>
 
@@ -37,15 +34,15 @@ $(document).ready(function(){
 
 				item.each(function(i,v){
 html += ""
-+ "	<tr>"
-+ "		<td><img src='" + $(v).find("thumbnail").text() + "'></td>"
-+ "		<td>" + $(v).find("name[type='primary']").attr("value") + "</td>"
-+ "	</tr>";
++ "		<td>"
++ "			<div class='thumbnail'><img src='" + $(v).find("thumbnail").text() + "'></div>"
++ "			<div>" + $(v).find("name[type='primary']").attr("value") + "</div>"
++ "		</td>";
 				});
 			}
 		)
 		.done(function(){
-			$("#GamesList tbody").html(html);
+			$("#GamesList tbody tr").html(html);
 		});
 	});
 });
