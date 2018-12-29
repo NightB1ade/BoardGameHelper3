@@ -4,12 +4,7 @@
 {% include header.html %}
 
 <body>
-<section id="title">
-	<h1>{{ page.title | default: site.title }}</h1>
-	{%- if page.title != null %}
-	<p>{{ site.title }}</p>
-	{%- endif %}
-</section>
+{% include page_title.html %}
 
 <section id="content">
 {{ content }}
