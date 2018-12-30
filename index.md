@@ -7,6 +7,24 @@
 
 
 <script>
+var MinDivWidth = 1;
+var MinDivOuterWidth = 1;
+
+
+
+
+function GamesListWidthResize() {
+	var SectionWidth = $("#GamesList").width();
+	var DivWidth;
+
+	DivWidth = SectionWidth / parseInt(SectionWidth / MinDivOuterWidth);
+	$("#GamesList div").outerWidth(DivWidth);
+}
+
+
+
+
+
 $(document).ready(function(){
 	var BGGIDList = "";
 	var html = "";
@@ -44,6 +62,13 @@ html += ""
 		)
 		.done(function(){
 			$("#GamesList").html(html);
+
+			MinDivWidth = $("#GamesList div").width();
+			MinDivOuterWidth = $("#GamesList div").outerWidth(true);
+			GamesListWidthResize();
+			$(window).resize(function(){
+				GamesListWidthResize();
+			});
 		});
 	});
 });
