@@ -85,8 +85,10 @@ section#title {
 #GamesList div {
 	border-bottom: 1px solid #434343;
 	display: inline-block;
+	height: 100px;
 	padding: 5px 10px;
 	width: 340px;
+	vertical-align: middle;
 
 	span.thumbnail {
 		height: 100px;
