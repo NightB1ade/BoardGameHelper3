@@ -1,11 +1,10 @@
 <h1>Games List</h1>
 
-<table id="GamesList">
-<tbody>
-	<tr>
-	</tr>
-</tbody>
-</table>
+<div id="GamesList">
+</div>
+
+
+
 
 <script>
 $(document).ready(function(){
@@ -34,17 +33,17 @@ $(document).ready(function(){
 
 				item.each(function(i,v){
 html += ""
-+ "		<td>"
-+ "			<a href='{{ 'Games/' | relative_url }}?bggid=" + $(v).attr("id") + "'>"
-+ "				<div class='thumbnail'><img src='" + $(v).find("thumbnail").text() + "'></div>"
-+ "				<div>" + $(v).find("name[type='primary']").attr("value") + "</div>"
-+ "			</a>"
-+ "		</td>";
++ "	<div>"
++ "		<a href='Game.html?bggid=" + $(v).attr("id") + "'>"
++ "			<span class='thumbnail'><img src='" + $(v).find("thumbnail").text() + "'></span>"
++ "			<span>" + $(v).find("name[type='primary']").attr("value") + "</span>"
++ "		</a>"
++ "	</div>";
 				});
 			}
 		)
 		.done(function(){
-			$("#GamesList tbody tr").html(html);
+			$("#GamesList").html(html);
 		});
 	});
 });

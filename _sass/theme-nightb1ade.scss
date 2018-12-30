@@ -82,29 +82,22 @@ section#title {
 
 /*------------------------------------------------------------------------------------------------*/
 
-table#GamesList {
-	table-layout: fixed;
+#GamesList div {
+	border-bottom: 1px solid #434343;
+	display: inline-block;
+	padding: 5px 10px;
+	width: 340px;
 
-	td {
-		column-width: 340px;
-		vertical-align: middle;
-		display: inline-block;
-	}
+	span.thumbnail {
+		height: 100px;
+		margin: 0 10px 0 0;
+		width: 100px;
 
-	div {
-		display: inline-block;
-
-		&.thumbnail {
-			height: 100px;
-			margin: 0 10px 0 0;
-			width: 100px;
-
-			img {
-				align: left;
-				max-height: 100px;
-				max-width: 100px;
-				vertical-align: middle;
-			}
+		img {
+			align: left;
+			max-height: 100px;
+			max-width: 100px;
+			vertical-align: middle;
 		}
 	}
 }
