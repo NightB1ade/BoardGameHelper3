@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 				item.each(function(i,v){
 html += ""
-+ "	<div>"
++ 	"<div>"
 + "		<a href='Games/?bggid=" + $(v).attr("id") + "'>"
 + "			<span class='thumbnail'><img src='" + $(v).find("thumbnail").text() + "'></span>"
 + "			<span>" + $(v).find("name[type='primary']").attr("value") + "</span>"
