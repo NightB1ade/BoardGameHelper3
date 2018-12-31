@@ -51,12 +51,12 @@ function DisplayEndGame() {
 		$("#Parameters tr[name='NoPlayers']").css("visibility") == "visible"
 		&& NoPlayers == null
 	) {
-		alert("Please set number of player numbers");
+		alert("Please set number of " + $(gamedata).find("Strings Players_Lower").text());
 		return
 	}
 
 	html += "<h1>End Game"
-	+ ((NoPlayers != null) ? " - " + NoPlayers + " Players": "")
+	+ ((NoPlayers != null) ? " - " + NoPlayers + " " + $(gamedata).find("Strings Players_Capitalise").text(): "")
 	+ "</h1>";
 
 	// End Game Triggers
@@ -113,14 +113,16 @@ $(document).ready(function(){
 			// Unhide player number chooser if appropriate
 			var MinPlayers = $(gamedata).find("Base Players MinPlayers").text();
 			var MaxPlayers = $(gamedata).find("Base Players MaxPlayers").text();
-			var Default = $(gamedata).find("Base Players Default").text();
+			var DefaultPlayers = $(gamedata).find("Base Players Default").text();
+			var TextPlayers = $(gamedata).find("Strings Players_Capitalise").text();
 
 			if (MinPlayers != MaxPlayers) {
+				$("#Parameters tr[name='NoPlayers'] .label").html("No. " + TextPlayers);
 				$("input[name='NoPlayers']").spinner({
 					min: MinPlayers
 					,max: MaxPlayers
 				});
-				$("input[name='NoPlayers']").spinner("value",Default);
+				$("input[name='NoPlayers']").spinner("value",DefaultPlayers);
 				$("#Parameters tr[name='NoPlayers']").css("visibility","visible");
 			}
 		}

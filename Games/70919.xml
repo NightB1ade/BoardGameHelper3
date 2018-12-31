@@ -2,6 +2,10 @@
 <Game>
 	<BGGID>70919</BGGID>
 	<Name>Takenoko</Name>
+	<Strings>
+		<Players_Capitalise>Players</Players_Capitalise>
+		<Players_Lower>players</Players_Lower>
+	</Strings>
 	<Base>
 		<Players>
 			<MinPlayers>2</MinPlayers>
@@ -11,13 +15,13 @@
 		<EndGame>
 			<Trigger>
 				<Item>
-					<Text>A player earns their ${Players} objective card</Text>
+					<Text>A player earns their &lt;strong&gt;${Players}&lt;/strong&gt; objective card</Text>
 					<Players number="2">9th</Players>
 					<Players number="3">8th</Players>
 					<Players number="4">7th</Players>
 				</Item>
-				<Item><Text>The player who triggers end-game gets the ‘Emperor’ card (+2 points)</Text></Item>
-				<Item><Text>All other player(s) get one more turn</Text></Item>
+				<Item><Text>The player who triggers end-game gets the &lt;strong&gt;‘Emperor’ card&lt;/strong&gt; (+2 points)</Text></Item>
+				<Item><Text>All other player(s) get &lt;strong&gt;one more turn&lt;/strong&gt;</Text></Item>
 			</Trigger>
 			<Scoring>
 				<Item><Text>Total points indicated on earned objective cards</Text></Item>
