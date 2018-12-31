@@ -84,7 +84,7 @@ $(document).ready(function(){
 
 	// Get Internal Data
 	$.get(
-		"{{ /Games/ | relative_url }}" + BGGID + ".xml"
+		"{{ '/Games/' | relative_url }}" + BGGID + ".xml"
 		,function(data){
 			gamedata = $(data).find("Game");
 
