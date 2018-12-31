@@ -79,9 +79,6 @@ function DisplayEndGame() {
 
 
 $(document).ready(function(){
-	var url = new URL(window.location.href);
-	var BGGID = url.searchParams.get("bggid");
-
 	//Get BGGAPI Data
 	$.get(
 		"{{ site.bggapi-thing }}" + BGGID
