@@ -103,9 +103,15 @@ $(document).ready(function(){
 			// Unhide player number chooser if appropriate
 			var MinPlayers = $(gamedata).find("Base Players MinPlayers").text();
 			var MaxPlayers = $(gamedata).find("Base Players MaxPlayers").text();
+			var Default = $(gamedata).find("Base Players Default").text();
+
 			if (MinPlayers != MaxPlayers) {
-				$("#Parameters #NoPlayers").css("visibility","visible");
-				$("#Parameters #NoPlayers td.input").html("INPUT");
+				$("input[name='NoPlayers']").spinner({
+					min: MinPlayers
+					,max: MaxPlayers
+				});
+				$("input[name='NoPlayers']").spinner("value",Default);
+				$("#Parameters tr[name='NoPlayers']").css("visibility","visible");
 			}
 		}
 	);
