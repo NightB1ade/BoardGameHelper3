@@ -33,25 +33,40 @@ var BGGID = url.searchParams.get("bggid");
 
 
 
+function myStringInterpolation(tpl,args) {
+	var keys = Object.keys(args)
+	,fn = new Function(...keys,'return `' + tpl.replace(/`/g, '\\`') + '`');
+	return fn(...keys.map(x => args[x]));
+};
+
+
+
+
 function DisplayEndGame() {
-	var html = "<h1>End Game</h1>";
 	var endgamedata = $(gamedata).find("Base EndGame");
+	var html = "";
+	var NoPlayers = $("input[name='NoPlayers']").spinner("value");
+
+	html += "<h1>End Game - " + NoPlayers + " Players</h1>";
 
 	// End Game Triggers
-	if ($(endgamedata).find("Trigger Text Item").first().text() != "") {
-		var text = $(endgamedata).find("Trigger Text Item");
+	if ($(endgamedata).find("Trigger Item Text").first().text() != "") {
+		var item = $(endgamedata).find("Trigger Item");
 		html += "<h2>Trigger</h2><ul>";
-		$(text).each(function(){
-			html += "<li>" + $(this).text() + "</li>";
+		$(item).each(function(){
+			var subs = {
+				Players: $(this).find("Players[number='" + NoPlayers + "']").text()
+			};
+			html += "<li>" + myStringInterpolation($(this).find("Text").text(),subs) + "</li>";
 		});
 		html += "</ul>";
 	}
 
 	// End Game Scoring
-	if ($(endgamedata).find("Scoring Text Item").text() != "") {
+	if ($(endgamedata).find("Scoring Item Text").text() != "") {
 		var text = $(endgamedata).find("Scoring Text Item");
 		html += "<h2>Scoring</h2><ul>";
-		$(endgamedata).find("Scoring Text Item").each(function(){
+		$(endgamedata).find("Scoring Item Text").each(function(){
 			html += "<li>" + $(this).text() + "</li>";
 		});
 		html += "</ul>";
@@ -97,5 +112,7 @@ $(document).ready(function(){
 			}
 		}
 	);
+
+	$("button").button();
 });
 </script>

@@ -6,26 +6,23 @@
 		<Players>
 			<MinPlayers>2</MinPlayers>
 			<MaxPlayers>4</MaxPlayers>
+			<Default>3</Default>
 		</Players>
 		<EndGame>
 			<Trigger>
-				<Text>
-					<Item>
-						Triggered by a player earning their {Players} objective card
-						<Players number="2">9th</Players>
-						<Players number="3">8th</Players>
-						<Players number="4">7th</Players>
-					</Item>
-					<Item>The player who triggers end-game gets the ‘Emperor’ card (+2 points)</Item>
-					<Item>All other players get one more turn</Item>
-				</Text>
+				<Item>
+					<Text>A player earns their ${Players} objective card</Text>
+					<Players number="2">9th</Players>
+					<Players number="3">8th</Players>
+					<Players number="4">7th</Players>
+				</Item>
+				<Item><Text>The player who triggers end-game gets the ‘Emperor’ card (+2 points)</Text></Item>
+				<Item><Text>All other player(s) get one more turn</Text></Item>
 			</Trigger>
 			<Scoring>
-				<Text>
-					<Item>Total points indicated on earned objective cards</Item>
-					<Item>In case of tie, the player with most panda objective cards wins</Item>
-					<Item>In case of farther tie, shared victory</Item>
-				</Text>
+				<Item><Text>Total points indicated on earned objective cards</Text></Item>
+				<Item><Text>In case of tie, the player with most panda objective cards wins</Text></Item>
+				<Item><Text>In case of farther tie, shared victory</Text></Item>
 			</Scoring>
 		</EndGame>
 	</Base>
