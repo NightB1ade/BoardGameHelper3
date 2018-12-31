@@ -47,7 +47,17 @@ function DisplayEndGame() {
 	var html = "";
 	var NoPlayers = $("input[name='NoPlayers']").spinner("value");
 
-	html += "<h1>End Game - " + NoPlayers + " Players</h1>";
+	if (
+		$("#Parameters tr[name='NoPlayers']").css("visibility") == "visible"
+		&& NoPlayers == null
+	) {
+		alert("Please set number of player numbers");
+		return
+	}
+
+	html += "<h1>End Game"
+	+ ((NoPlayers != null) ? " - " + NoPlayers + " Players": "")
+	+ "</h1>";
 
 	// End Game Triggers
 	if ($(endgamedata).find("Trigger Item Text").first().text() != "") {
