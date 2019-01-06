@@ -72,16 +72,24 @@ function Display(display) {
 	// Heading 1
 	html = "<h1>" + html;
 	html += (
-		($(displaygamedata).find("Item Players").text() != ""
-		&& NoPlayers != null
-	) ? " - " + NoPlayers + " " + $(gamedata).find("Strings Players_Capitalise").text()
-	: "");
+		(
+			$(displaygamedata).find("Item Players").text() != ""
+			&& NoPlayers != null
+		)
+		? " - "
+			+ NoPlayers
+			+ " "
+			+ $(gamedata).find("Strings Players_Capitalise").text()
+		: ""
+	);
 	html += "</h1>";
 
 	// Add information
 	$(displaygamedata).find("Section").each(function(){
 		if ($(this).find("Heading").text() != "") {
-			html += "<h2>" + $(this).find("Heading").text() + "</h2>";
+			html += "<h2>"
+				+ $(this).find("Heading").text()
+				+ "</h2>";
 		}
 
 		html += "<ul>";
@@ -89,7 +97,9 @@ function Display(display) {
 			var subs = {
 				Players: $(this).find("Players[number='" + NoPlayers + "']").text()
 			};
-			html += "<li>" + myStringInterpolation($(this).find("Text").text(),subs) + "</li>";
+			html += "<li>"
+				+ myStringInterpolation($(this).find("Text").text(),subs)
+				+ "</li>";
 		});
 		html += "</ul>";
 	});
