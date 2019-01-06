@@ -16,6 +16,7 @@
 	<Expansions>
 		<Expansion name="Chibis">
 			<Name>Chibis</Name>
+			<Default>true</Default>
 		</Expansion>
 	</Expansions>
 	<Setup>
