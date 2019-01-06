@@ -12,26 +12,30 @@
 			<MaxPlayers>4</MaxPlayers>
 			<Default>3</Default>
 		</Players>
-		<Setup>
+	</Base>
+	<Setup>
+		<Section>
 			<Item><Text>Text1</Text></Item>
 			<Item><Text>Text2</Text></Item>
-		</Setup>
-		<EndGame>
-			<Trigger>
-				<Item>
-					<Text>A player earns their &lt;strong&gt;${Players}&lt;/strong&gt; objective card</Text>
-					<Players number="2">9th</Players>
-					<Players number="3">8th</Players>
-					<Players number="4">7th</Players>
-				</Item>
-				<Item><Text>The player who triggers end-game gets the &lt;strong&gt;‘Emperor’ card&lt;/strong&gt; (+2 points)</Text></Item>
-				<Item><Text>All other player(s) get &lt;strong&gt;one more turn&lt;/strong&gt;</Text></Item>
-			</Trigger>
-			<Scoring>
-				<Item><Text>Total points indicated on earned objective cards</Text></Item>
-				<Item><Text>In case of tie, the player with most panda objective cards wins</Text></Item>
-				<Item><Text>In case of farther tie, shared victory</Text></Item>
-			</Scoring>
-		</EndGame>
-	</Base>
+		</Section>
+	</Setup>
+	<EndGame>
+		<Section>
+			<Heading>Trigger</Heading>
+			<Item>
+				<Text>A player earns their &lt;strong&gt;${Players}&lt;/strong&gt; objective card</Text>
+				<Players number="2">9th</Players>
+				<Players number="3">8th</Players>
+				<Players number="4">7th</Players>
+			</Item>
+			<Item><Text>The player who triggers end-game gets the &lt;strong&gt;‘Emperor’ card&lt;/strong&gt; (+2 points)</Text></Item>
+			<Item><Text>All other player(s) get &lt;strong&gt;one more turn&lt;/strong&gt;</Text></Item>
+		</Section>
+		<Section>
+			<Heading>Scoring</Heading>
+			<Item><Text>Total points indicated on earned objective cards</Text></Item>
+			<Item><Text>In case of tie, the player with most panda objective cards wins</Text></Item>
+			<Item><Text>In case of farther tie, shared victory</Text></Item>
+		</Section>
+	</EndGame>
 </Game>
