@@ -16,6 +16,8 @@ layout: game
 				<button onclick="Display('EndGame')">End Game</Button>
 			</td>
 		</tr>
+		<tr name="DisplayButtons">
+		</tr>
 	</table>
 </span>
 
@@ -51,9 +53,15 @@ function Display(display) {
 	switch(display) {
 		case "EndGame":
 			displaygamedata = $(gamedata).find("EndGame");
+			html += "End Game";
 			break
 		case "Setup":
 			displaygamedata = $(gamedata).find("Setup");
+			html += "Setup"
+			break
+		case "Variants":
+			displaygamedata = $(gamedata).find("Variants");
+			html += "Variants";
 			break
 	}
 
@@ -61,23 +69,20 @@ function Display(display) {
 	if (
 		$("#Parameters tr[name='NoPlayers']").css("visibility") == "visible"
 		&& NoPlayers == null
+		&& $(displaygamedata).find("Item Players").text() != ""
 	) {
 		alert("Please set number of " + $(gamedata).find("Strings Players_Lower").text());
 		return
 	}
 
 	// Heading 1
-	html += "<h1>"
-	switch(display) {
-		case "EndGame":
-			html += "End Game";
-			break
-		case "Setup":
-			html += "Setup";
-			break
-	}
-	html += ((NoPlayers != null) ? " - " + NoPlayers + " " + $(gamedata).find("Strings Players_Capitalise").text(): "")
-	+ "</h1>";
+	html = "<h1>" + html;
+	html += (
+		($(displaygamedata).find("Item Players").text() != ""
+		&& NoPlayers != null
+	) ? " - " + NoPlayers + " " + $(gamedata).find("Strings Players_Capitalise").text()
+	: "");
+	html += "</h1>";
 
 	// Add information
 	$(displaygamedata).find("Section").each(function(){
@@ -123,6 +128,7 @@ $(document).ready(function(){
 		"{{ '/Games/' | relative_url }}" + BGGID + ".xml"
 		,function(data){
 			gamedata = $(data).find("Game");
+			var html_DisplayButtons = "";
 
 			// Unhide player number chooser if appropriate
 			var MinPlayers = $(gamedata).find("Base Players MinPlayers").text();
@@ -139,6 +145,24 @@ $(document).ready(function(){
 				$("input[name='NoPlayers']").spinner("value",DefaultPlayers);
 				$("#Parameters tr[name='NoPlayers']").css("visibility","visible");
 			}
+
+			//Add Relevant Buttons
+			if ($(gamedata).find("Setup").text() != "") {
+				html_DisplayButtons += " <button onclick=\"Display('Setup')\">Setup</button>";
+			}
+			if ($(gamedata).find("EndGame").text() != "") {
+				html_DisplayButtons += " <button onclick=\"Display('EndGame')\">End Game</button>";
+			}
+			if ($(gamedata).find("Variants").text() != "") {
+				html_DisplayButtons += " <button onclick=\"Display('Variants')\">Variants</button>";
+			}
+
+			if (html_DisplayButtons != "") {
+				html_DisplayButtons = "<td colspan='2'>" + html_DisplayButtons + "</td>";
+			}
+
+			$("#Parameters tr[name='DisplayButtons']").html(html_DisplayButtons);
+			$("button").button();
 		}
 	);
 

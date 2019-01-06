@@ -13,10 +13,19 @@
 			<Default>3</Default>
 		</Players>
 	</Base>
+	<Expansions>
+		<Expansion name="Chibis">
+			<Name>Chibis</Name>
+		</Expansion>
+	</Expansions>
 	<Setup>
 		<Section>
-			<Item><Text>Text1</Text></Item>
-			<Item><Text>Text2</Text></Item>
+			<Item><Text>&lt;strong&gt;Starting Hand&lt;/strong&gt;: One objective card of each category</Text></Item>
+			<Item><Text>&lt;strong&gt;Starting Player&lt;/strong&gt;: Tallest player</Text></Item>
+		</Section>
+		<Section>
+			<Heading>Reminder</Heading>
+			<Item><Text>&lt;strong&gt;Add Plot&lt;/strong&gt;: Draw 3, place 1, replace rest onto the bottom of draw pile</Text></Item>
 		</Section>
 	</Setup>
 	<EndGame>
@@ -34,8 +43,20 @@
 		<Section>
 			<Heading>Scoring</Heading>
 			<Item><Text>Total points indicated on earned objective cards</Text></Item>
+			<Item>
+				<Text>2 points for each panda baby</Text>
+				<Base>false</Base>
+				<Expansion name="Chibis">true</Expansion>
+			</Item>
 			<Item><Text>In case of tie, the player with most panda objective cards wins</Text></Item>
 			<Item><Text>In case of farther tie, shared victory</Text></Item>
 		</Section>
 	</EndGame>
+	<Variants>
+		<Section>
+			<Item><Text>&lt;strong&gt;No Instant Objectives&lt;/strong&gt;: If a player picks an objective card already completed in the bamboo garden, they must discard it and pick a new objective card of a category of their choosing</Text></Item>
+			<Item><Text>&lt;strong&gt;Gourmet&lt;/strong&gt;: The Panda cannot eat the bamboo’s first shoots, only the upper sections</Text></Item>
+			<Item><Text>&lt;strong&gt;Diversity&lt;/strong&gt;: At the end of the game, each set of different Objectives categories (Plots / Gardener / Panda) earns 3 additional points</Text></Item>
+		</Section>
+	</Variants>
 </Game>
