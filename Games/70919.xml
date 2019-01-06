@@ -38,7 +38,12 @@
 				<Players number="4">7th</Players>
 			</Item>
 			<Item><Text>The player who triggers end-game gets the &lt;strong&gt;‘Emperor’ card&lt;/strong&gt; (+2 points)</Text></Item>
-			<Item><Text>All other player(s) get &lt;strong&gt;one more turn&lt;/strong&gt;</Text></Item>
+			<Item>
+				<Text>The other ${Players} get &lt;strong&gt;one more turn&lt;/strong&gt;</Text>
+				<Players number="2">player</Players>
+				<Players number="3">two players</Players>
+				<Players number="4">three players</Players>
+			</Item>
 		</Section>
 		<Section>
 			<Heading>Scoring</Heading>
