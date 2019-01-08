@@ -113,7 +113,7 @@ function Display(display) {
 				if (
 					//Base game
 					Expansions_Checked == ""
-					&& $(this).find("Display Base").attr("value") != "true"
+					&& $(this).find("Display Base").text() == "false"
 				) {
 					return
 				} else if (
@@ -125,7 +125,7 @@ function Display(display) {
 					$(this).find("Display Expansion").each(function(){
 						if (
 							$.inArray($(this).attr("name"),Expansions_Checked) != -1
-							&& $(this).attr("value") == "true"
+							&& $(this).text() == "true"
 						) {
 							IsInArray = 1;
 							return
