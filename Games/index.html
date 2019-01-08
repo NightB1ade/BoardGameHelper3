@@ -172,7 +172,7 @@ $(document).ready(function(){
 
 	// Get Internal Data
 	$.get(
-		"{{ '/Games/' | relative_url }}" + BGGID + ".xml"
+		"{{ '/Games/' | relative_url }}" + BGGID + ".xml?v={{ site.github.build_revision }}"
 		,function(data){
 			gamedata = $(data).find("Game");
 			var html_DisplayButtons = "";
