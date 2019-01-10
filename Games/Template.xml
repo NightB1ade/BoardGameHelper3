@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Game>
+	<BGGID>12345</BGGID>
+	<Name>Name</Name>
+	<Strings>
+		<Players_Capitalise>Players</Players_Capitalise>
+		<Players_Lower>players</Players_Lower>
+	</Strings>
+	<Expansions>
+		<Expansion name="Expansion1" default="true">
+			<Name>Expansion1</Name>
+		</Expansion>
+	</Expansions>
+	<Players>
+		<Base min="2" max="4" default="3"></Base>
+	</Players>
+	<DisplayButtons>
+		<Setup>
+			<Name>Setup</Name>
+			<Section>
+				<Heading>Heading</Heading>
+				<Item><Text>&lt;strong&gt;Point 1&lt;/strong&gt;: Blurb 1</Text></Item>
+				<Item><Text>&lt;strong&gt;Point 2&lt;/strong&gt;: Blurb 2</Text></Item>
+				<Item>
+					<Text>&lt;strong&gt;Point 3&lt;/strong&gt;: Blurb 3</Text>
+					<Display>
+						<Base value="false"></Base>
+						<Expansion name="Expansion1" value="true"></Expansion>
+					</Display>
+				</Item>
+			</Section>
+		</Setup>
+	</DisplayButtons>
+</Game>
