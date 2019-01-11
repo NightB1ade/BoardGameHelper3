@@ -55,7 +55,7 @@ function Display(display) {
 	if (
 		$("#Parameters tr[name='NoPlayers']").css("visibility") == "visible"
 		&& NoPlayers == null
-		&& $(displaygamedata).find("Item Players").text() != ""
+		&& $(displaygamedata).find("Item Players").length != 0
 	) {
 		alert("Please set number of " + $(gamedata).find("Strings Players_Lower").text());
 		return
@@ -66,7 +66,7 @@ function Display(display) {
 		+ $(displaygamedata).children("Name").text()
 		+ (
 			(
-				$(displaygamedata).find("Item Players").text() != ""
+				$(displaygamedata).find("Item Players").length != 0
 				&& NoPlayers != null
 			)
 			? " - "
@@ -77,8 +77,8 @@ function Display(display) {
 		)
 		+ "</h1>";
 
-	// Expansion Subheading
-	if ($(displaygamedata).find("Expansion").attr("value") != null) {
+	// Subheading
+	if ($(displaygamedata).find("Expansion").length != 0) {
 		if (Expansions_Checked_Code == "") {
 			html += "<h3>Base Game</h3>";
 		} else {
@@ -102,7 +102,7 @@ function Display(display) {
 
 	// Add information
 	$(displaygamedata).find("Section").each(function(){
-		if ($(this).find("Heading").text() != "") {
+		if ($(this).find("Heading").length != 0) {
 			html += "<h2>"
 				+ $(this).find("Heading").text()
 				+ "</h2>";
@@ -111,7 +111,7 @@ function Display(display) {
 		html += "<ul>";
 		$(this).find("Item").each(function(){
 			//Return if not displayed
-			if ($(this).find("Display").text() != "") {
+			if ($(this).find("Display Expansion").length != 0) {
 				if (
 					//Base game
 					Expansions_Checked_Code == ""
@@ -236,7 +236,7 @@ $(document).ready(function(){
 			}
 
 			//Add Expansion Checkboxes
-			if ($(gamedata).find("Expansions").text() != "") {
+			if ($(gamedata).find("Expansions").length != 0) {
 				html_ExpansionCheckboxes += "<td>Expansions</td><td>";
 				$(gamedata).find("Expansions Expansion").each(function(){
 					html_ExpansionCheckboxes += " <label for='Checkbox_Expansion_"
