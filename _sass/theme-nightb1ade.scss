@@ -130,18 +130,21 @@ table#Parameters {
 	height: 50px;
 	padding: 5px 10px;
 	width: 250px;
-	vertical-align: middle;
 
-	span.thumbnail {
-		height: 50px;
-		margin: 0 10px 0 0;
-		width: 50px;
+	span {
+		display: inline-block;
+		vertical-align: middle;
 
-		img {
-			align: left;
-			max-height: 50px;
-			max-width: 50px;
-			vertical-align: middle;
+		&.thumbnail {
+			text-align: center;
+			height: 50px;
+			margin: 0 10px 0 0;
+			width: 50px;
+
+			img {
+				max-height: 50px;
+				max-width: 50px;
+			}
 		}
 	}
 }
