@@ -6,14 +6,6 @@
 		<Players_Capitalise>Players</Players_Capitalise>
 		<Players_Lower>players</Players_Lower>
 	</Strings>
-	<Expansions>
-		<Expansion name="Expansion1" default="true">
-			<Name>Expansion1</Name>
-		</Expansion>
-	</Expansions>
-	<Players>
-		<Base min="2" max="4" default="3"></Base>
-	</Players>
 	<DisplayButtons>
 		<EndGame>
 			<Name>End Game</Name>
