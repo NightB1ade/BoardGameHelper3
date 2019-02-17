@@ -68,15 +68,15 @@ function Display() {
 	// Add information
 	$(displaygamedata).find("Section").each(function(){
 		var HasContent = 0;
-		var html_Item = "";
+		var html_Section = "";
 
 		if ($(this).find("Heading").length != 0) {
-			html_Item += "<h2>"
+			html_Section += "<h2>"
 				+ $(this).find("Heading").text()
 				+ "</h2>";
 		}
 
-		html_Item += "<ul>";
+		html_Section += "<ul>";
 		$(this).find("Item").each(function(){
 			//Return if not displayed
 			if ($(this).find("Display Expansion").length != 0) {
@@ -129,17 +129,17 @@ function Display() {
 			};
 
 			//Add list item
-			html_Item += "<li>"
+			html_Section += "<li>"
 				+ myStringInterpolation($(this).find("Text").text(),subs)
 				+ "</li>";
 
 			//Mark Has Content
 			HasContent = 1;
 		});
-		html_Item += "</ul>";
+		html_Section += "</ul>";
 
 		if (HasContent == 1) {
-			html += html_Item;
+			html += html_Section;
 		}
 	});
 
