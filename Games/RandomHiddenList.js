@@ -1,5 +1,5 @@
 function RandomHiddenList_Start() {
-	$.getScript("{{ '/Functions/Random.js' | relative_url }}");
+	$.getScript("/Functions/Random.js");
 
 	var display = $("input[name='DisplayRadio']:checked").attr("value");
 	var displaygamedata = $(gamedata).find("DisplayButtons " + display);
