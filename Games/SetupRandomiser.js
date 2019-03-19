@@ -1,5 +1,5 @@
 function SetupRandomiser_Start() {
-	$.getScript("Random.js");
+	$.getScript("/Board-Game-Helper/Functions/Random.js");
 
 	var display = $("input[name='DisplayRadio']:checked").attr("value");
 	var displaygamedata = $(gamedata).find("DisplayButtons " + display);
