@@ -139,6 +139,51 @@
 				<Item><Text>Thunderspeaker</Text></Item>
 				<Item><Text>Vital Strength of Earth</Text></Item>
 			</Section>
+			<Section name="Adversary">
+				<Heading>Adversary</Heading>
+				<Randomise number="1"></Randomise>
+				<Item><Text>The Kingdom of Brandenburg-Prussia</Text></Item>
+				<Item><Text>The Kingdom of England</Text></Item>
+				<Item>
+					<Text>The Kingdom of France (Plantation Colony)</Text>
+					<Available>
+						<Expansion name="BranchAndClaw" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item><Text>The Kingdom of Sweden</Text></Item>
+			</Section>
+			<Section name="Scenario">
+				<Heading>Scenario</Heading>
+				<Randomise number="1"></Randomise>
+				<Item><Text>Blitz</Text></Item>
+				<Item><Text>Dahan Insurrection</Text></Item>
+				<Item><Text>Guard the Isle’s Heart</Text></Item>
+				<Item>
+					<Text>Powers Long Forgotten</Text>
+					<Available>
+						<Expansion name="BranchAndClaw" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item><Text>Rituals of Terror</Text></Item>
+				<Item>
+					<Text>Rituals of the Destroying Flame</Text>
+					<Available>
+						<Expansion name="BranchAndClaw" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>Second Wave</Text>
+					<Available>
+						<Expansion name="BranchAndClaw" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>Ward the Shores</Text>
+					<Available>
+						<Expansion name="BranchAndClaw" value="true"></Expansion>
+					</Available>
+				</Item>
+			</Section>
 		</SetupRandomiser>
 	</DisplayButtons>
 </Game>
