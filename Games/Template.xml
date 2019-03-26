@@ -43,5 +43,7 @@
 						<Expansion name="CODE" value="true"></Expansion>
 					</Available>
 				</Item>
+			</Section>
+		</SetupRandomiser>
 	</DisplayButtons>
 </Game>
