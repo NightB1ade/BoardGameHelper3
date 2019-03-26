@@ -91,6 +91,14 @@
 				<Item><Text>Thunderspeaker</Text></Item>
 				<Item><Text>Vital Strength of Earth</Text></Item>
 			</Section>
+			<Section name="PlayerBoards">
+				<Heading>Player Boards</Heading>
+				<Randomise number="NoPlayers"></Randomise>
+				<Item><Text>A</Text></Item>
+				<Item><Text>B</Text></Item>
+				<Item><Text>C</Text></Item>
+				<Item><Text>D</Text></Item>
+			</Section>
 			<Section name="Adversary">
 				<Heading>Adversary</Heading>
 				<Randomise number="1"></Randomise>
