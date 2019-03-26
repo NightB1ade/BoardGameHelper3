@@ -30,5 +30,18 @@
 				</Item>
 			</Section>
 		</Setup>
+		<SetupRandomiser>
+			<Script type="SetupRandomiser"></Script>
+			<Name>Setup Randomiser</Name>
+			<Section name="CODE">
+				<Heading>Heading</Heading>
+				<Randomise number="NoPlayers"></Randomise>
+				<Item><Text>Item 1</Text></Item>
+				<Item>
+					<Text>Item 2</Text>
+					<Available>
+						<Expansion name="CODE" value="true"></Expansion>
+					</Available>
+				</Item>
 	</DisplayButtons>
 </Game>
