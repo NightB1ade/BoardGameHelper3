@@ -6,6 +6,11 @@
 		<Players_Capitalise>Firefighters</Players_Capitalise>
 		<Players_Lower>firefighters</Players_Lower>
 	</Strings>
+	<Expansions>
+		<Expansion name="UrbanStructures" default="true">
+			<Name>Urban Structures</Name>
+		</Expansion>
+	</Expansions>
 	<Players>
 		<Base min="2" max="6" default="4"></Base>
 	</Players>
@@ -70,6 +75,45 @@
 				<Item><Text>Players decide who goes first, otherwise youngest player</Text></Item>
 			</Section>
 		</Setup>
+		<SetupRandomiser>
+			<Script type="SetupRandomiser"></Script>
+			<Name>Setup Randomiser</Name>
+			<Section name="Firefighter">
+				<Heading>Firefighters</Heading>
+				<Randomise number="NoPlayers"></Randomise>
+				<Item><Text>CAFS Firefighter</Text></Item>
+				<Item><Text>Fire Captain</Text></Item>
+				<Item><Text>Generalist</Text></Item>
+				<Item><Text>Hazmat Technician</Text></Item>
+				<Item><Text>Imaging Technician</Text></Item>
+				<Item><Text>Paramedic</Text></Item>
+				<Item><Text>Rescue Specialist</Text></Item>
+				<Item>
+					<Text>Structural Engineer</Text>
+					<Available>
+						<Expansion name="UrbanStructures" value="true"></Expansion>
+					</Available>
+				</Item>
+			</Section>
+			<Section name="Map">
+				<Heading>Map</Heading>
+				<Randomise number="1"></Randomise>
+				<Item><Text>Beach House</Text></Item>
+				<Item>
+					<Text>Brownstone</Text>
+					<Available>
+						<Expansion name="UrbanStructures" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>High Rise</Text>
+					<Available>
+						<Expansion name="UrbanStructures" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item><Text>Ranch House</Text></Item>
+			</Section>
+		</SetupRandomiser>
 		<Variants>
 			<Name>Variants</Name>
 			<Section>
