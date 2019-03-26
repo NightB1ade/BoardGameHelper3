@@ -10,5 +10,25 @@
 				<Item><Text>&lt;strong&gt;Wonder Selection Phase&lt;/strong&gt;: Deal 4 Wonders out, players pick using 1221 order, deal 4 more Wonders, players pick using 2112 order</Text></Item>
 			</Section>
 		</Setup>
+		<SetupRandomiser>
+			<Script type="SetupRandomiser"></Script>
+			<Name>Setup Randomiser</Name>
+			<Section name="Wonders">
+				<Heading>Wonders</Heading>
+				<Randomise number="4"></Randomise>
+				<Item><Text>The Appian Way</Text></Item>
+				<Item><Text>Circus Maximus</Text></Item>
+				<Item><Text>The Colossus</Text></Item>
+				<Item><Text>The Great Library</Text></Item>
+				<Item><Text>The Great Lighthouse</Text></Item>
+				<Item><Text>The Hanging Gardens</Text></Item>
+				<Item><Text>The Mausoleum</Text></Item>
+				<Item><Text>Piraeus</Text></Item>
+				<Item><Text>The Pyramids</Text></Item>
+				<Item><Text>The Sphinx</Text></Item>
+				<Item><Text>The Statue of Zeus</Text></Item>
+				<Item><Text>The Temple of Artemis</Text></Item>
+			</Section>
+		</SetupRandomiser>
 	</DisplayButtons>
 </Game>
