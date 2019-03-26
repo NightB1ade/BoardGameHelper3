@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Game>
+	<BGGID>146278</BGGID>
+	<Name>Tash-Kalar</Name>
+	<Strings>
+		<Players_Capitalise>Players</Players_Capitalise>
+		<Players_Lower>players</Players_Lower>
+	</Strings>
+	<Expansions>
+		<Expansion name="Everfrost" default="true">
+			<Name>Everfrost</Name>
+		</Expansion>
+		<Expansion name="Nethervoid" default="true">
+			<Name>Nethervoid</Name>
+		</Expansion>
+	</Expansions>
+	<Players>
+		<Base min="2" max="4" default="3"></Base>
+	</Players>
+	<DisplayButtons>
+		<SetupRandomiser>
+			<Script type="SetupRandomiser"></Script>
+			<Name>Setup Randomiser</Name>
+			<Section name="School">
+				<Heading>School</Heading>
+				<Randomise number="NoPlayers"></Randomise>
+				<Item>
+					<Text>Everfrost</Text>
+					<Available>
+						<Expansion name="Everfrost" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item><Text>Highland School</Text></Item>
+				<Item>
+					<Text>Nethervoid</Text>
+					<Available>
+						<Expansion name="Nethervoid" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item><Text>Northern Imperial School</Text></Item>
+				<Item><Text>Southern Imperial School</Text></Item>
+				<Item><Text>Sylvan School</Text></Item>
+			</Section>
+		</SetupRandomiser>
+	</DisplayButtons>
+</Game>
