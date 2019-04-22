@@ -30,8 +30,6 @@
 				<Item>
 					<Text>&lt;strong&gt;Fourth Explosion&lt;/strong&gt;: Roll until target space that is not on fire, add Fire and Hot Spot markers, resolve an Explosion</Text>
 					<Display>
-						<Difficulty code="Recruit" value="false"></Difficulty>
-						<Difficulty code="Veteran" value="false"></Difficulty>
 						<Difficulty code="Heroic" value="true"></Difficulty>
 					</Display>
 				</Item>
@@ -45,7 +43,6 @@
 				<Item>
 					<Text>&lt;strong&gt;Difficulty Hotspots&lt;/strong&gt;: Add &lt;strong&gt;3&lt;/strong&gt; additional Hot Spots</Text>
 					<Display>
-						<Difficulty code="Recruit" value="false"></Difficulty>
 						<Difficulty code="Veteran" value="true"></Difficulty>
 						<Difficulty code="Heroic" value="true"></Difficulty>
 					</Display>
@@ -57,7 +54,6 @@
 					<Players number="5">3</Players>
 					<Players number="6">3</Players>
 					<Display>
-						<Players number="2" value="false"></Players>
 						<Players number="3" value="true"></Players>
 						<Players number="4" value="true"></Players>
 						<Players number="5" value="true"></Players>
