@@ -140,7 +140,7 @@ function Display() {
 			//Difficulty
 			if (
 				$(this).find("Display Difficulty").length != 0
-				&& $(this).find("Display Difficulty[name='" + Difficulty + "']").attr("value") != "true"
+				&& $(this).find("Display Difficulty[code='" + Difficulty + "']").attr("value") != "true"
 			) {
 				return
 			}
@@ -148,7 +148,7 @@ function Display() {
 			//Substitution Array
 			var subs = {
 				Players: $(this).find("Players[number='" + NoPlayers + "']").text()
-				,Difficulty: $(this).find("Difficulty[name='" + Difficulty + "']").text()
+				,Difficulty: $(this).find("Difficulty[code='" + Difficulty + "']").text()
 			};
 
 			//Add list item
