@@ -36,7 +36,7 @@ $(document).ready(function(){
 		"{{ 'Games/GamesList.xml' | relative_url }}?v={{ site.github.build_revision }}"
 		,function(data){
 			BGGIDList = $(data).find("Games Game").map(function(){
-				return $(this).attr("id");
+				return $(this).attr("bggid");
 			})
 			.get()
 			.join();

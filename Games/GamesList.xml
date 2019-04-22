@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Games>
-	<Game id="173346">
+	<Game bggid="173346">
 		<Name>7 Wonders Duel</Name>
 	</Game>
-	<Game id="191189">
+	<Game bggid="191189">
 		<Name>Aeon's End</Name>
 	</Game>
-	<Game id="100901">
+	<Game bggid="100901">
 		<Name>Flash Point</Name>
 	</Game>
-	<Game id="37046">
+	<Game bggid="37046">
 		<Name>Ghost Stories</Name>
 	</Game>
-	<Game id="200147">
+	<Game bggid="200147">
 		<Name>Kanagawa</Name>
 	</Game>
-	<Game id="124708">
+	<Game bggid="124708">
 		<Name>Mice and Mystics</Name>
 	</Game>
-	<Game id="102652">
+	<Game bggid="102652">
 		<Name>Sentinels of the Multiverse</Name>
 	</Game>
-	<Game id="162886">
+	<Game bggid="162886">
 		<Name>Spirit Island</Name>
 	</Game>
-	<Game id="253684">
+	<Game bggid="253684">
 		<Name>Spring Meadow</Name>
 	</Game>
-	<Game id="166384">
+	<Game bggid="166384">
 		<Name>Spyfall</Name>
 	</Game>
-	<Game id="70919">
+	<Game bggid="70919">
 		<Name>Takenoko</Name>
 	</Game>
-	<Game id="146278">
+	<Game bggid="146278">
 		<Name>Tash-Kalar</Name>
 	</Game>
-	<Game id="123540">
+	<Game bggid="123540">
 		<Name>Tokaido</Name>
 	</Game>
 </Games>
