@@ -7,7 +7,7 @@
 		<Players_Lower>players</Players_Lower>
 	</Strings>
 	<Expansions>
-		<Expansion name="Expansion1" default="true">
+		<Expansion code="Expansion1" default="true">
 			<Name>Expansion1</Name>
 		</Expansion>
 	</Expansions>
@@ -20,12 +20,17 @@
 			<Section>
 				<Heading>Heading</Heading>
 				<Item><Text>&lt;strong&gt;Point 1&lt;/strong&gt;: Blurb 1</Text></Item>
-				<Item><Text>&lt;strong&gt;Point 2&lt;/strong&gt;: Blurb 2</Text></Item>
+				<Item>
+					<Text>&lt;strong&gt;Point 2&lt;/strong&gt;: Blurb 2</Text>
+					<Display>
+						<Expansion code="Expansion1" value="true"></Expansion>
+					</Display>
+				</Item>
 				<Item>
 					<Text>&lt;strong&gt;Point 3&lt;/strong&gt;: Blurb 3</Text>
 					<Display>
-						<Base value="false"></Base>
-						<Expansion name="Expansion1" value="true"></Expansion>
+						<Base value="true"></Base>
+						<Expansion code="Expansion1" value="false"></Expansion>
 					</Display>
 				</Item>
 			</Section>

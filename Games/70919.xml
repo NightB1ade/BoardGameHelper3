@@ -7,7 +7,7 @@
 		<Players_Lower>players</Players_Lower>
 	</Strings>
 	<Expansions>
-		<Expansion name="Chibis" default="true">
+		<Expansion code="Chibis" default="true">
 			<Name>Chibis</Name>
 		</Expansion>
 	</Expansions>
@@ -51,7 +51,7 @@
 					<Text>2 points for each panda baby</Text>
 					<Display>
 						<Base value="false"></Base>
-						<Expansion name="Chibis" value="true"></Expansion>
+						<Expansion code="Chibis" value="true"></Expansion>
 					</Display>
 				</Item>
 				<Item><Text>In case of tie, the player with most panda objective cards wins</Text></Item>

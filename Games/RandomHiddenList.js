@@ -12,7 +12,7 @@ function RandomHiddenList_Start() {
 	//Option Table Start
 	html += "<table id='OptionsTable'>"
 		+ "<tr><thead>"
-		+ "<th>" + $(displaygamedata).find("Script String[name='RandomItemName']").text() + "</th>"
+		+ "<th>" + $(displaygamedata).find("Script String[code='RandomItemName']").text() + "</th>"
 		+ "<th>Used?</th>"
 		+ "</thead></tr>";
 
@@ -25,12 +25,12 @@ function RandomHiddenList_Start() {
 			+ "<td>" + $(this).children("Text").text() + "</td>"
 			+ "<td>"
 			+ " <label for='RandomItemName" + i + "_Yes'>Yes</label>"
-			+ " <input type='radio' name='RandomItemName" + i + "' id='RandomItemName" + i + "_Yes' value='1'"
+			+ " <input type='radio' code='RandomItemName" + i + "' id='RandomItemName" + i + "_Yes' value='1'"
 			+ " label='" + $(this).children("Text").text() + "'"
 			+ (($(this).find("Default Players").length != 0 && $(this).find("Default Players[number=" + NoPlayers + "]").attr("value") == "true") ? "checked" : "")
 			+ ">"
 			+ " <label for='RandomItemName" + i + "_No'>No</label>"
-			+ " <input type='radio' name='RandomItemName" + i + "' id='RandomItemName" + i + "_No'"
+			+ " <input type='radio' code='RandomItemName" + i + "' id='RandomItemName" + i + "_No'"
 			+ (($(this).find("Default Players").length != 0 && $(this).find("Default Players[number=" + NoPlayers + "]").attr("value") == "true") ? "" : "checked")
 			+ ">"
 			+ "</td>"
@@ -52,7 +52,7 @@ function RandomHiddenList_Start() {
 	html += "<table id='DeckTable'>"
 		+ "<thead><tr>"
 		+ "<th></th>"
-		+ "<th>" + $(displaygamedata).find("Script String[name='RandomItemName']").text() + "</th>"
+		+ "<th>" + $(displaygamedata).find("Script String[code='RandomItemName']").text() + "</th>"
 		+ "<th></th>"
 		+ "</tr></thead>";
 

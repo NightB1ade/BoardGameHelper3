@@ -13,7 +13,7 @@
 		<SetupRandomiser>
 			<Script type="SetupRandomiser"></Script>
 			<Name>Setup Randomiser</Name>
-			<Section name="Wonders">
+			<Section code="Wonders">
 				<Heading>Wonders</Heading>
 				<Randomise number="4"></Randomise>
 				<Item><Text>The Appian Way</Text></Item>

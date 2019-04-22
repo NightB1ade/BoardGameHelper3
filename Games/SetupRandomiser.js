@@ -11,7 +11,7 @@ function SetupRandomiser_Start() {
 		//Section Heading
 		html += "<h2>" + $(this).find("Heading").text() + "</h2>"
 			+ "<button onclick=SetupRandomiser_Randomise('" + $(this).attr("name") + "')>Randomise</button>"
-			+ "<div id='SetupRandomiser_" + $(this).attr("name") + "'></div>";
+			+ "<div id='SetupRandomiser_" + $(this).attr("code") + "'></div>";
 
 	});
 
@@ -49,7 +49,7 @@ function SetupRandomiser_Randomise(section) {
 		} else {
 			$(this).children("Available").children("Expansion").each(function(){
 				if (
-					$.inArray($(this).attr("name"),Expansions_Checked_Code) != -1
+					$.inArray($(this).attr("code"),Expansions_Checked_Code) != -1
 					&& $(this).attr("value") == "true"
 				) {
 					OptionsVariantsArray.push([i,null]);
@@ -164,7 +164,7 @@ function RerollOption() {
 		} else {
 			$(this).children("Available").children("Expansion").each(function(){
 				if (
-					$.inArray($(this).attr("name"),Expansions_Checked_Code) != -1
+					$.inArray($(this).attr("code"),Expansions_Checked_Code) != -1
 					&& $(this).attr("value") == "true"
 				) {
 					AvailableOptionsArray.push(i);

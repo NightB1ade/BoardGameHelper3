@@ -7,10 +7,10 @@
 		<Players_Lower>players</Players_Lower>
 	</Strings>
 	<Expansions>
-		<Expansion name="Everfrost" default="true">
+		<Expansion code="Everfrost" default="true">
 			<Name>Everfrost</Name>
 		</Expansion>
-		<Expansion name="Nethervoid" default="true">
+		<Expansion code="Nethervoid" default="true">
 			<Name>Nethervoid</Name>
 		</Expansion>
 	</Expansions>
@@ -21,20 +21,20 @@
 		<SetupRandomiser>
 			<Script type="SetupRandomiser"></Script>
 			<Name>Setup Randomiser</Name>
-			<Section name="School">
+			<Section code="School">
 				<Heading>School</Heading>
 				<Randomise number="NoPlayers"></Randomise>
 				<Item>
 					<Text>Everfrost</Text>
 					<Available>
-						<Expansion name="Everfrost" value="true"></Expansion>
+						<Expansion code="Everfrost" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item><Text>Highland School</Text></Item>
 				<Item>
 					<Text>Nethervoid</Text>
 					<Available>
-						<Expansion name="Nethervoid" value="true"></Expansion>
+						<Expansion code="Nethervoid" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item><Text>Northern Imperial School</Text></Item>

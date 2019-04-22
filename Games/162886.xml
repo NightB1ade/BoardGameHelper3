@@ -7,10 +7,10 @@
 		<Players_Lower>spirits</Players_Lower>
 	</Strings>
 	<Expansions>
-		<Expansion name="BranchAndClaw" default="true">
+		<Expansion code="BranchAndClaw" default="true">
 			<Name>Branch and Claw</Name>
 		</Expansion>
-		<Expansion name="Promos" default="true">
+		<Expansion code="Promos" default="true">
 			<Name>Promos</Name>
 		</Expansion>
 	</Expansions>
@@ -29,14 +29,14 @@
 					<Text>&lt;strong&gt;Beast Token&lt;/strong&gt;: Lowest numbered no printed Setup</Text>
 					<Display>
 						<Base value="false"></Base>
-						<Expansion name="BranchAndClaw" value="true"></Expansion>
+						<Expansion code="BranchAndClaw" value="true"></Expansion>
 					</Display>
 				</Item>
 				<Item>
 					<Text>&lt;strong&gt;Disease Token&lt;/strong&gt;: Land #2</Text>
 					<Display>
 						<Base value="false"></Base>
-						<Expansion name="BranchAndClaw" value="true"></Expansion>
+						<Expansion code="BranchAndClaw" value="true"></Expansion>
 					</Display>
 				</Item>
 				<Item><Text>Initial &lt;strong&gt;Explore&lt;/strong&gt;</Text></Item>
@@ -55,20 +55,20 @@
 		<SetupRandomiser>
 			<Script type="SetupRandomiser"></Script>
 			<Name>Setup Randomiser</Name>
-			<Section name="Spirits">
+			<Section code="Spirits">
 				<Heading>Spirits</Heading>
 				<Randomise number="NoPlayers"></Randomise>
 				<Item><Text>Bringer of Dreams and Nightmares</Text></Item>
 				<Item>
 					<Text>Heart of the Wildfire</Text>
 					<Available>
-						<Expansion name="Promos" value="true"></Expansion>
+						<Expansion code="Promos" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Keeper of the Forbidden Wilds</Text>
 					<Available>
-						<Expansion name="BranchAndClaw" value="true"></Expansion>
+						<Expansion code="BranchAndClaw" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item><Text>Lightning’s Swift Strike</Text></Item>
@@ -77,21 +77,21 @@
 				<Item>
 					<Text>Serpent Slumbers Beneath the Island</Text>
 					<Available>
-						<Expansion name="Promos" value="true"></Expansion>
+						<Expansion code="Promos" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item><Text>Shadows Flicker Like Flame</Text></Item>
 				<Item>
 					<Text>Sharp Fangs Behind the Leaves</Text>
 					<Available>
-						<Expansion name="BranchAndClaw" value="true"></Expansion>
+						<Expansion code="BranchAndClaw" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item><Text>A Spread of Rampant Green</Text></Item>
 				<Item><Text>Thunderspeaker</Text></Item>
 				<Item><Text>Vital Strength of Earth</Text></Item>
 			</Section>
-			<Section name="PlayerBoards">
+			<Section code="PlayerBoards">
 				<Heading>Player Boards</Heading>
 				<Randomise number="NoPlayers"></Randomise>
 				<Item><Text>A</Text></Item>
@@ -99,7 +99,7 @@
 				<Item><Text>C</Text></Item>
 				<Item><Text>D</Text></Item>
 			</Section>
-			<Section name="Adversary">
+			<Section code="Adversary">
 				<Heading>Adversary</Heading>
 				<Randomise number="1"></Randomise>
 				<Item><Text>The Kingdom of Brandenburg-Prussia</Text></Item>
@@ -107,12 +107,12 @@
 				<Item>
 					<Text>The Kingdom of France (Plantation Colony)</Text>
 					<Available>
-						<Expansion name="BranchAndClaw" value="true"></Expansion>
+						<Expansion code="BranchAndClaw" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item><Text>The Kingdom of Sweden</Text></Item>
 			</Section>
-			<Section name="Scenario">
+			<Section code="Scenario">
 				<Heading>Scenario</Heading>
 				<Randomise number="1"></Randomise>
 				<Item><Text>Blitz</Text></Item>
@@ -121,26 +121,26 @@
 				<Item>
 					<Text>Powers Long Forgotten</Text>
 					<Available>
-						<Expansion name="BranchAndClaw" value="true"></Expansion>
+						<Expansion code="BranchAndClaw" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item><Text>Rituals of Terror</Text></Item>
 				<Item>
 					<Text>Rituals of the Destroying Flame</Text>
 					<Available>
-						<Expansion name="BranchAndClaw" value="true"></Expansion>
+						<Expansion code="BranchAndClaw" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Second Wave</Text>
 					<Available>
-						<Expansion name="BranchAndClaw" value="true"></Expansion>
+						<Expansion code="BranchAndClaw" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Ward the Shores</Text>
 					<Available>
-						<Expansion name="BranchAndClaw" value="true"></Expansion>
+						<Expansion code="BranchAndClaw" value="true"></Expansion>
 					</Available>
 				</Item>
 			</Section>
@@ -163,7 +163,7 @@
 					<Text>Event Card</Text>
 					<Display>
 						<Base value="false"></Base>
-						<Expansion name="BranchAndClaw" value="true"></Expansion>
+						<Expansion code="BranchAndClaw" value="true"></Expansion>
 					</Display>
 				</Item>
 				<Item><Text>Fear Effects</Text></Item>

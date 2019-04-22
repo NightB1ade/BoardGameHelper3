@@ -12,7 +12,7 @@
 	<DisplayButtons>
 		<PlayOrderDeck>
 			<Script type="RandomHiddenList">
-				<String name="RandomItemName">Card</String>
+				<String code="RandomItemName">Card</String>
 			</Script>
 			<Name>Play Order Deck</Name>
 			<Item>

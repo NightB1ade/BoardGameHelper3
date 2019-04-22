@@ -47,11 +47,11 @@ function Display() {
 	var html = "";
 
 	display = $("input[name='DisplayRadio']:checked").attr("value");
-	NoPlayers = Number($("select[name='NoPlayers'] option:selected").attr("name"));
-	Difficulty = $("select[name='Difficulty'] option:selected").attr("name");
+	NoPlayers = Number($("select[name='NoPlayers'] option:selected").attr("code"));
+	Difficulty = $("select[name='Difficulty'] option:selected").attr("code");
 
 	Expansions_Checked_Code = $(".Checkbox_Expansion:checked").map(function(){
-		return $(this).attr("name");
+		return $(this).attr("code");
 	}).get();
 
 	Expansions_Checked_Name = $(".Checkbox_Expansion:checked").map(function(){
@@ -117,7 +117,7 @@ function Display() {
 
 					$(this).find("Display Expansion").each(function(){
 						if (
-							$.inArray($(this).attr("name"),Expansions_Checked_Code) != -1
+							$.inArray($(this).attr("code"),Expansions_Checked_Code) != -1
 							&& $(this).attr("value") == "true"
 						) {
 							IsInArray = 1;
@@ -208,7 +208,7 @@ $(document).ready(function(){
 					+ "<td><select name='NoPlayers'>";
 
 				for (var i = MinPlayers ; i <= MaxPlayers ; i += 1) {
-					html_NoPlayers += "<option name='" + i + "'"
+					html_NoPlayers += "<option code='" + i + "'"
 						+ ((i == DefaultPlayers) ? " selected='selected'" : "")
 						+ ">" + i + "</option>";
 				}
@@ -224,8 +224,8 @@ $(document).ready(function(){
 					+ "<td><select name='Difficulty'>";
 
 				$(gamedata).children("Difficulties").children().each(function(){
-					html_Difficulty += "<option name='"
-						+ $(this).attr("name")
+					html_Difficulty += "<option code='"
+						+ $(this).attr("code")
 						+ "'"
 						+ (($(this).attr("default") == "true") ? " selected='selected'" : "")
 						+ ">"
@@ -244,13 +244,13 @@ $(document).ready(function(){
 				html_ExpansionCheckboxes += "<td>Expansions</td><td>";
 				$(gamedata).find("Expansions Expansion").each(function(){
 					html_ExpansionCheckboxes += " <label for='Checkbox_Expansion_"
-						+ $(this).attr("name")
+						+ $(this).attr("code")
 						+ "'>"
 						+ $(this).children("Name").text()
 						+ "</label><input type='checkbox' class='Checkbox_Expansion' id='Checkbox_Expansion_"
-						+ $(this).attr("name")
-						+ "' name='"
-						+ $(this).attr("name")
+						+ $(this).attr("code")
+						+ "' code='"
+						+ $(this).attr("code")
 						+ "' DisplayName='"
 						+ $(this).children("Name").text()
 						+ "'"

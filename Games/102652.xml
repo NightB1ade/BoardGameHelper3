@@ -7,28 +7,28 @@
 		<Players_Lower>heroes</Players_Lower>
 	</Strings>
 	<Expansions>
-		<Expansion name="InfernalRelics" default="true">
+		<Expansion code="InfernalRelics" default="true">
 			<Name>Infernal Relics</Name>
 		</Expansion>
-		<Expansion name="MiniExpansions" default="true">
+		<Expansion code="MiniExpansions" default="true">
 			<Name>Mini-Expansions</Name>
 		</Expansion>
-		<Expansion name="OblivAeon" default="true">
+		<Expansion code="OblivAeon" default="true">
 			<Name>OblivAeon</Name>
 		</Expansion>
-		<Expansion name="RookCity" default="true">
+		<Expansion code="RookCity" default="true">
 			<Name>Rook City</Name>
 		</Expansion>
-		<Expansion name="ShatteredTimelines" default="true">
+		<Expansion code="ShatteredTimelines" default="true">
 			<Name>Shattered Timelines</Name>
 		</Expansion>
-		<Expansion name="VillainsOfTheMultiverse" default="true">
+		<Expansion code="VillainsOfTheMultiverse" default="true">
 			<Name>Villains of the Multiverse</Name>
 		</Expansion>
-		<Expansion name="Vengeance" default="true">
+		<Expansion code="Vengeance" default="true">
 			<Name>Vengeance</Name>
 		</Expansion>
-		<Expansion name="WrathOfTheCosmos" default="true">
+		<Expansion code="WrathOfTheCosmos" default="true">
 			<Name>Wrath of the Cosmos</Name>
 		</Expansion>
 	</Expansions>
@@ -39,7 +39,7 @@
 		<SetupRandomiser>
 			<Script type="SetupRandomiser"></Script>
 			<Name>Setup Randomiser</Name>
-			<Section name="Heroes">
+			<Section code="Heroes">
 				<Heading>Heroes</Heading>
 				<Randomise number="NoPlayers"></Randomise>
 				<Item>
@@ -54,7 +54,7 @@
 				<Item>
 					<Text>Akash’Thriya</Text>
 					<Available>
-						<Expansion name="OblivAeon" value="true"></Expansion>
+						<Expansion code="OblivAeon" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -64,7 +64,7 @@
 				<Item>
 					<Text>The Argent Adept</Text>
 					<Available>
-						<Expansion name="InfernalRelics" value="true"></Expansion>
+						<Expansion code="InfernalRelics" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -76,7 +76,7 @@
 				<Item>
 					<Text>Benchmark</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -96,7 +96,7 @@
 				<Item>
 					<Text>Captain Cosmic</Text>
 					<Available>
-						<Expansion name="WrathOfTheCosmos" value="true"></Expansion>
+						<Expansion code="WrathOfTheCosmos" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -108,7 +108,7 @@
 				<Item>
 					<Text>Chrono-Ranger</Text>
 					<Available>
-						<Expansion name="ShatteredTimelines" value="true"></Expansion>
+						<Expansion code="ShatteredTimelines" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -118,7 +118,7 @@
 				<Item>
 					<Text>La Comodora</Text>
 					<Available>
-						<Expansion name="OblivAeon" value="true"></Expansion>
+						<Expansion code="OblivAeon" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -128,7 +128,7 @@
 				<Item>
 					<Text>Dr. Medico</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -138,7 +138,7 @@
 				<Item>
 					<Text>Expatriette</Text>
 					<Available>
-						<Expansion name="RookCity" value="true"></Expansion>
+						<Expansion code="RookCity" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -157,7 +157,7 @@
 				<Item>
 					<Text>Guise</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -177,7 +177,7 @@
 				<Item>
 					<Text>The Harpy</Text>
 					<Available>
-						<Expansion name="OblivAeon" value="true"></Expansion>
+						<Expansion code="OblivAeon" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -187,7 +187,7 @@
 				<Item>
 					<Text>Idealist</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -197,7 +197,7 @@
 				<Item>
 					<Text>K.N.Y.F.E.</Text>
 					<Available>
-						<Expansion name="Vengeance" value="true"></Expansion>
+						<Expansion code="Vengeance" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -216,7 +216,7 @@
 				<Item>
 					<Text>Lifeline</Text>
 					<Available>
-						<Expansion name="OblivAeon" value="true"></Expansion>
+						<Expansion code="OblivAeon" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -226,7 +226,7 @@
 				<Item>
 					<Text>Luminary</Text>
 					<Available>
-						<Expansion name="OblivAeon" value="true"></Expansion>
+						<Expansion code="OblivAeon" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -236,7 +236,7 @@
 				<Item>
 					<Text>Mainstay</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -246,7 +246,7 @@
 				<Item>
 					<Text>Mr. Fixer</Text>
 					<Available>
-						<Expansion name="RookCity" value="true"></Expansion>
+						<Expansion code="RookCity" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -256,7 +256,7 @@
 				<Item>
 					<Text>The Naturalist</Text>
 					<Available>
-						<Expansion name="Vengeance" value="true"></Expansion>
+						<Expansion code="Vengeance" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -266,7 +266,7 @@
 				<Item>
 					<Text>Nightmist</Text>
 					<Available>
-						<Expansion name="InfernalRelics" value="true"></Expansion>
+						<Expansion code="InfernalRelics" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -276,7 +276,7 @@
 				<Item>
 					<Text>Omnitron-X</Text>
 					<Available>
-						<Expansion name="ShatteredTimelines" value="true"></Expansion>
+						<Expansion code="ShatteredTimelines" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -286,7 +286,7 @@
 				<Item>
 					<Text>Parse</Text>
 					<Available>
-						<Expansion name="Vengeance" value="true"></Expansion>
+						<Expansion code="Vengeance" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -304,7 +304,7 @@
 				<Item>
 					<Text>The Scholar</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -314,7 +314,7 @@
 				<Item>
 					<Text>The Sentinels</Text>
 					<Available>
-						<Expansion name="Vengeance" value="true"></Expansion>
+						<Expansion code="Vengeance" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -324,7 +324,7 @@
 				<Item>
 					<Text>Setback</Text>
 					<Available>
-						<Expansion name="Vengeance" value="true"></Expansion>
+						<Expansion code="Vengeance" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -334,7 +334,7 @@
 				<Item>
 					<Text>Sky-Scraper</Text>
 					<Available>
-						<Expansion name="WrathOfTheCosmos" value="true"></Expansion>
+						<Expansion code="WrathOfTheCosmos" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -344,7 +344,7 @@
 				<Item>
 					<Text>Stuntman</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -372,7 +372,7 @@
 				<Item>
 					<Text>Unity</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -400,7 +400,7 @@
 				<Item>
 					<Text>Writhe</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -408,25 +408,25 @@
 					</Variants>
 				</Item>
 			</Section>
-			<Section name="Villain">
+			<Section code="Villain">
 				<Heading>Villain</Heading>
 				<Randomise number="1"></Randomise>
 				<Item>
 					<Text>Akash’Bhuta</Text>
 					<Available>
-						<Expansion name="InfernalRelics" value="true"></Expansion>
+						<Expansion code="InfernalRelics" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Ambuscade</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Apostate</Text>
 					<Available>
-						<Expansion name="InfernalRelics" value="true"></Expansion>
+						<Expansion code="InfernalRelics" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
@@ -439,19 +439,19 @@
 				<Item>
 					<Text>La Capitan</Text>
 					<Available>
-						<Expansion name="ShatteredTimelines" value="true"></Expansion>
+						<Expansion code="ShatteredTimelines" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>The Chairman</Text>
 					<Available>
-						<Expansion name="RookCity" value="true"></Expansion>
+						<Expansion code="RookCity" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Chokepoint</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
@@ -460,25 +460,25 @@
 				<Item>
 					<Text>Deadline</Text>
 					<Available>
-						<Expansion name="WrathOfTheCosmos" value="true"></Expansion>
+						<Expansion code="WrathOfTheCosmos" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>The Dreamer</Text>
 					<Available>
-						<Expansion name="ShatteredTimelines" value="true"></Expansion>
+						<Expansion code="ShatteredTimelines" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>The Ennead</Text>
 					<Available>
-						<Expansion name="InfernalRelics" value="true"></Expansion>
+						<Expansion code="InfernalRelics" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Gloomweaver</Text>
 					<Available>
-						<Expansion name="InfernalRelics" value="true"></Expansion>
+						<Expansion code="InfernalRelics" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -491,7 +491,7 @@
 				<Item>
 					<Text>Infinitor</Text>
 					<Available>
-						<Expansion name="WrathOfTheCosmos" value="true"></Expansion>
+						<Expansion code="WrathOfTheCosmos" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -501,19 +501,19 @@
 				<Item>
 					<Text>Iron Legacy</Text>
 					<Available>
-						<Expansion name="ShatteredTimelines" value="true"></Expansion>
+						<Expansion code="ShatteredTimelines" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Kaargra Warfang</Text>
 					<Available>
-						<Expansion name="WrathOfTheCosmos" value="true"></Expansion>
+						<Expansion code="WrathOfTheCosmos" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Kismet</Text>
 					<Available>
-						<Expansion name="ShatteredTimelines" value="true"></Expansion>
+						<Expansion code="ShatteredTimelines" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -523,19 +523,19 @@
 				<Item>
 					<Text>The Matriarch</Text>
 					<Available>
-						<Expansion name="RookCity" value="true"></Expansion>
+						<Expansion code="RookCity" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Miss Information</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>OblivAeon</Text>
 					<Available>
-						<Expansion name="OblivAeon" value="true"></Expansion>
+						<Expansion code="OblivAeon" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
@@ -548,19 +548,19 @@
 				<Item>
 					<Text>Plague Rat</Text>
 					<Available>
-						<Expansion name="RookCity" value="true"></Expansion>
+						<Expansion code="RookCity" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Progeny</Text>
 					<Available>
-						<Expansion name="WrathOfTheCosmos" value="true"></Expansion>
+						<Expansion code="WrathOfTheCosmos" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Spite</Text>
 					<Available>
-						<Expansion name="RookCity" value="true"></Expansion>
+						<Expansion code="RookCity" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant><Text>-</Text></Variant>
@@ -570,68 +570,68 @@
 				<Item>
 					<Text>Vengeance Team</Text>
 					<Available>
-						<Expansion name="Vengeance" value="true"></Expansion>
-						<Expansion name="VillainsOfTheMultiverse" value="true"></Expansion>
+						<Expansion code="Vengeance" value="true"></Expansion>
+						<Expansion code="VillainsOfTheMultiverse" value="true"></Expansion>
 					</Available>
 					<Variants>
 						<Variant>
 							<Text>Baron Blade</Text>
 							<Available>
-								<Expansion name="Vengeance" value="true"></Expansion>
+								<Expansion code="Vengeance" value="true"></Expansion>
 							</Available>
 						</Variant>
 						<Variant>
 							<Text>Biomancer</Text>
 							<Available>
-								<Expansion name="VillainsOfTheMultiverse" value="true"></Expansion>
+								<Expansion code="VillainsOfTheMultiverse" value="true"></Expansion>
 							</Available>
 						</Variant>
 						<Variant>
 							<Text>Bugbear</Text>
 							<Available>
-								<Expansion name="VillainsOfTheMultiverse" value="true"></Expansion>
+								<Expansion code="VillainsOfTheMultiverse" value="true"></Expansion>
 							</Available>
 						</Variant>
 						<Variant>
 							<Text>Citizens Hammer and Anvil</Text>
 							<Available>
-								<Expansion name="VillainsOfTheMultiverse" value="true"></Expansion>
+								<Expansion code="VillainsOfTheMultiverse" value="true"></Expansion>
 							</Available>
 						</Variant>
 						<Variant>
 							<Text>Ermine</Text>
 							<Available>
-								<Expansion name="Vengeance" value="true"></Expansion>
+								<Expansion code="Vengeance" value="true"></Expansion>
 							</Available>
 						</Variant>
 						<Variant>
 							<Text>Friction</Text>
 							<Available>
-								<Expansion name="Vengeance" value="true"></Expansion>
+								<Expansion code="Vengeance" value="true"></Expansion>
 							</Available>
 						</Variant>
 						<Variant>
 							<Text>Fright Train</Text>
 							<Available>
-								<Expansion name="Vengeance" value="true"></Expansion>
+								<Expansion code="Vengeance" value="true"></Expansion>
 							</Available>
 						</Variant>
 						<Variant>
 							<Text>Greazer Clutch</Text>
 							<Available>
-								<Expansion name="VillainsOfTheMultiverse" value="true"></Expansion>
+								<Expansion code="VillainsOfTheMultiverse" value="true"></Expansion>
 							</Available>
 						</Variant>
 						<Variant>
 							<Text>Proletariat</Text>
 							<Available>
-								<Expansion name="Vengeance" value="true"></Expansion>
+								<Expansion code="Vengeance" value="true"></Expansion>
 							</Available>
 						</Variant>
 						<Variant>
 							<Text>Sergeant Steel</Text>
 							<Available>
-								<Expansion name="VillainsOfTheMultiverse" value="true"></Expansion>
+								<Expansion code="VillainsOfTheMultiverse" value="true"></Expansion>
 							</Available>
 						</Variant>
 					</Variants>
@@ -639,65 +639,65 @@
 				<Item>
 					<Text>Wager Master</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 				</Item>
 			</Section>
-			<Section name="Environment">
+			<Section code="Environment">
 				<Heading>Environment</Heading>
 				<Randomise number="1"></Randomise>
 				<Item>
 					<Text>The Block</Text>
 					<Available>
-						<Expansion name="ShatteredTimelines" value="true"></Expansion>
+						<Expansion code="ShatteredTimelines" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>The Celestial Tribunal</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Champion Studios</Text>
 					<Available>
-						<Expansion name="OblivAeon" value="true"></Expansion>
+						<Expansion code="OblivAeon" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>The Court of Blood</Text>
 					<Available>
-						<Expansion name="VillainsOfTheMultiverse" value="true"></Expansion>
+						<Expansion code="VillainsOfTheMultiverse" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Dok'Thorath Capital</Text>
 					<Available>
-						<Expansion name="WrathOfTheCosmos" value="true"></Expansion>
+						<Expansion code="WrathOfTheCosmos" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Enclave of Endings</Text>
 					<Available>
-						<Expansion name="WrathOfTheCosmos" value="true"></Expansion>
+						<Expansion code="WrathOfTheCosmos" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>The Final Wasteland</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Fort Adamant</Text>
 					<Available>
-						<Expansion name="OblivAeon" value="true"></Expansion>
+						<Expansion code="OblivAeon" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Freedom Tower</Text>
 					<Available>
-						<Expansion name="Vengeance" value="true"></Expansion>
+						<Expansion code="Vengeance" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
@@ -706,19 +706,19 @@
 				<Item>
 					<Text>Madame Mittermeier’s Fantastical Festival of Conundrums &amp; Curiosities</Text>
 					<Available>
-						<Expansion name="VillainsOfTheMultiverse" value="true"></Expansion>
+						<Expansion code="VillainsOfTheMultiverse" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Maerynian Refuge</Text>
 					<Available>
-						<Expansion name="OblivAeon" value="true"></Expansion>
+						<Expansion code="OblivAeon" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Magmaria</Text>
 					<Available>
-						<Expansion name="VillainsOfTheMultiverse" value="true"></Expansion>
+						<Expansion code="VillainsOfTheMultiverse" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
@@ -727,31 +727,31 @@
 				<Item>
 					<Text>Mobile Defence Platform</Text>
 					<Available>
-						<Expansion name="Vengeance" value="true"></Expansion>
+						<Expansion code="Vengeance" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Mordengrad</Text>
 					<Available>
-						<Expansion name="OblivAeon" value="true"></Expansion>
+						<Expansion code="OblivAeon" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Nexus of the Void</Text>
 					<Available>
-						<Expansion name="OblivAeon" value="true"></Expansion>
+						<Expansion code="OblivAeon" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Omnitron IV</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Pike Industrial Complex</Text>
 					<Available>
-						<Expansion name="RookCity" value="true"></Expansion>
+						<Expansion code="RookCity" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
@@ -760,25 +760,25 @@
 				<Item>
 					<Text>Silver Gulch 1883</Text>
 					<Available>
-						<Expansion name="MiniExpansions" value="true"></Expansion>
+						<Expansion code="MiniExpansions" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Temple of Zhu Long</Text>
 					<Available>
-						<Expansion name="VillainsOfTheMultiverse" value="true"></Expansion>
+						<Expansion code="VillainsOfTheMultiverse" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Time Cataclysm</Text>
 					<Available>
-						<Expansion name="ShatteredTimelines" value="true"></Expansion>
+						<Expansion code="ShatteredTimelines" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
 					<Text>Tomb of Anubis</Text>
 					<Available>
-						<Expansion name="InfernalRelics" value="true"></Expansion>
+						<Expansion code="InfernalRelics" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
