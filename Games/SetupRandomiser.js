@@ -10,7 +10,7 @@ function SetupRandomiser_Start() {
 	$(displaygamedata).find("Section").each(function(){
 		//Section Heading
 		html += "<h2>" + $(this).find("Heading").text() + "</h2>"
-			+ "<button onclick=SetupRandomiser_Randomise('" + $(this).attr("name") + "')>Randomise</button>"
+			+ "<button onclick=SetupRandomiser_Randomise('" + $(this).attr("code") + "')>Randomise</button>"
 			+ "<div id='SetupRandomiser_" + $(this).attr("code") + "'></div>";
 
 	});
@@ -26,7 +26,7 @@ function SetupRandomiser_Start() {
 
 
 function SetupRandomiser_Randomise(section) {
-	var RandomiseGameData = $(displaygamedata).find("Section[name=" + section + "]");
+	var RandomiseGameData = $(displaygamedata).find("Section[code=" + section + "]");
 	var OptionsVariantsArray = [];
 
 	var html = "";
@@ -135,7 +135,7 @@ function DisplayRandomResults(section,data,array) {
 
 function RerollOption() {
 	var section = $(this).attr("section");
-	var RandomiseGameData = $(displaygamedata).find("Section[name=" + section + "]");
+	var RandomiseGameData = $(displaygamedata).find("Section[code=" + section + "]");
 	var row = $(this).closest("tbody").children().index($(this).closest("tr"));
 	var i = 0;
 
@@ -194,7 +194,7 @@ function RerollOption() {
 
 function RerollVariant() {
 	var section = $(this).attr("section");
-	var RandomiseGameData = $(displaygamedata).find("Section[name=" + section + "]");
+	var RandomiseGameData = $(displaygamedata).find("Section[code=" + section + "]");
 	var CurrentOption = $(this).closest("tr").attr("optionArray");
 	var CurrentVariant = $(this).closest("td").attr("variantArray");
 
