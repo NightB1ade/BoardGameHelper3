@@ -6,11 +6,6 @@
 		<Players_Capitalise>Players</Players_Capitalise>
 		<Players_Lower>players</Players_Lower>
 	</Strings>
-	<Expansions>
-		<Expansion code="Expansion1" default="true">
-			<Name>Expansion1</Name>
-		</Expansion>
-	</Expansions>
 	<Players>
 		<Base min="2" max="6" default="4"></Base>
 	</Players>
@@ -107,9 +102,9 @@
 			</Section>
 			<Section>
 				<Heading>Era Scoring</Heading>
-				<Item><Text>&gt;strong&lt;Survival&gt;/strong&lt;: 1 Darwin Point</Text></Item>
-				<Item><Text>&gt;strong&lt;Adaptation&gt;/strong&lt;: Winning species gets Biome's amount of Darwin Points</Text></Item>
-				<Item><Text>&gt;strong&lt;Competitive Strength&gt;/strong&lt;: Across all biomes, 3 most competitive gains 3/2/1 Darwin Points</Text></Item>
+				<Item><Text>&lt;strong&gt;Survival&lt;/strong&gt;: 1 Darwin Point</Text></Item>
+				<Item><Text>&lt;strong&gt;Adaptation&lt;/strong&gt;: Winning species gets Biome's amount of Darwin Points</Text></Item>
+				<Item><Text>&lt;strong&gt;Competitive Strength&lt;/strong&gt;: Across all biomes, 3 most competitive gains 3/2/1 Darwin Points</Text></Item>
 			</Section>
 			<Section>
 				<Heading>Transition Phase</Heading>
