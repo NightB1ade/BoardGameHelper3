@@ -10,6 +10,14 @@
 		<Base min="2" max="4" default="3"></Base>
 	</Players>
 	<DisplayButtons>
+		<Link>
+			<Name>Link</Name>
+			<Section>
+				<Heading>External Randomisers</Heading>
+				<Item><Text>&lt;a href="https://www.actionphasegames.com/pages/aerandomizer"&gt;Official Setup Randomiser&lt;/a&gt;</Text></Item>
+				<Item><Text>&lt;a href="https://on3iro.github.io/aeons-end-randomizer/"&gt;on3iro’s Randomiser&lt;/a&gt;</Text></Item>
+			</Section>
+		</Link>
 		<PlayOrderDeck>
 			<Script type="RandomHiddenList">
 				<String code="RandomItemName">Card</String>
