@@ -2,8 +2,6 @@
 layout: default
 ---
 
-Temporary link back to old version: <a href="index2.html">Index2</a>
-
 <h1>Games List</h1>
 
 <div id="GamesList">
@@ -35,7 +33,7 @@ $(document).ready(function(){
 	var html = "";
 
 	$.get( //Get Games List from internal XML
-		"{{ 'Games/GamesList.xml' | relative_url }}?v={{ site.github.build_revision }}"
+		"{{ 'Games2/GamesList.xml' | relative_url }}?v={{ site.github.build_revision }}"
 		,function(data){
 			BGGIDList = $(data).find("Games Game").map(function(){
 				return $(this).attr("bggid");
