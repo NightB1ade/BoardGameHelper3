@@ -33,7 +33,7 @@ $(document).ready(function(){
 	var html = "";
 
 	$.get( //Get Games List from internal XML
-		"{{ 'Games2/GamesList.xml' | relative_url }}?v={{ site.github.build_revision }}"
+		"{{ 'Games/GamesList.xml' | relative_url }}?v={{ site.github.build_revision }}"
 		,function(data){
 			BGGIDList = $(data).find("Games Game").map(function(){
 				return $(this).attr("bggid");
