@@ -1,5 +1,5 @@
 function RandomHiddenList_Start() {
-	$.getScript("/Board-Game-Helper/Functions/Random.js");
+	$.getScript("../Functions/Random.js");
 
 	var html = "";
 

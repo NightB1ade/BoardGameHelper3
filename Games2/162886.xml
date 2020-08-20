@@ -10,8 +10,14 @@
 		<Expansion code="BranchAndClaw" default="true">
 			<Name>Branch and Claw</Name>
 		</Expansion>
-		<Expansion code="Promos" default="true">
-			<Name>Promos</Name>
+		<Expansion code="JaggedEarth" default="true">
+			<Name>Jagged Earth</Name>
+		</Expansion>
+		<Expansion code="Promo1" default="true">
+			<Name>Promo 1</Name>
+		</Expansion>
+		<Expansion code="Promo2" default="true">
+			<Name>Promo 2</Name>
 		</Expansion>
 	</Expansions>
 	<Players>
@@ -60,9 +66,33 @@
 				<Randomise number="NoPlayers"></Randomise>
 				<Item><Text>Bringer of Dreams and Nightmares</Text></Item>
 				<Item>
+					<Text>Downpour Drenches the World</Text>
+					<Available>
+						<Expansion code="Promo2" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>Finder of Paths Unseen</Text>
+					<Available>
+						<Expansion code="Promo2" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>Fractured Days Split the Sky</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>Grinning Trickster Stirs Up Trouble</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
 					<Text>Heart of the Wildfire</Text>
 					<Available>
-						<Expansion code="Promos" value="true"></Expansion>
+						<Expansion code="Promo1" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
@@ -71,25 +101,165 @@
 						<Expansion code="BranchAndClaw" value="true"></Expansion>
 					</Available>
 				</Item>
-				<Item><Text>Lightning’s Swift Strike</Text></Item>
+				<Item>
+					<Text>Lightning’s Swift Strike</Text>
+					<Variants>
+						<Variant><Text>-</Text></Variant>
+						<Variant>
+							<Text>Immense</Text>
+							<Available>
+								<Expansion code="Promo2" value="true"></Expansion>
+							</Available>
+						</Variant>
+						<Variant>
+							<Text>Pandemonium ➜ Thundering Destruction</Text>
+							<Available>
+								<Expansion code="JaggedEarth" value="true"></Expansion>
+							</Available>
+						</Variant>
+						<Variant>
+							<Text>Wind ➜ Swiftness of Lightning</Text>
+							<Available>
+								<Expansion code="JaggedEarth" value="true"></Expansion>
+							</Available>
+						</Variant>
+					</Variants>
+				</Item>
+				<Item>
+					<Text>Lure of the Deep Wilderness</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>Many Minds Move as One</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
 				<Item><Text>Ocean’s Hungry Grasp</Text></Item>
-				<Item><Text>River Surges in Sunlight</Text></Item>
+				<Item>
+					<Text>River Surges in Sunlight</Text>
+					<Variants>
+						<Variant><Text>-</Text></Variant>
+						<Variant>
+							<Text>Sunshine, Forge Boon of Vigor, Gain 1 Energy</Text>
+							<Available>
+								<Expansion code="JaggedEarth" value="true"></Expansion>
+							</Available>
+						</Variant>
+						<Variant>
+							<Text>Travel ➜ River’s Domain</Text>
+							<Available>
+								<Expansion code="Promo2" value="true"></Expansion>
+							</Available>
+						</Variant>
+					</Variants>
+				</Item>
 				<Item>
 					<Text>Serpent Slumbers Beneath the Island</Text>
 					<Available>
-						<Expansion code="Promos" value="true"></Expansion>
+						<Expansion code="Promo1" value="true"></Expansion>
 					</Available>
 				</Item>
-				<Item><Text>Shadows Flicker Like Flame</Text></Item>
+				<Item>
+					<Text>Shadows Flicker Like Flame</Text>
+					<Variants>
+						<Variant><Text>-</Text></Variant>
+						<Variant>
+							<Text>Amorphous ➜ Shadows of the Dahan</Text>
+							<Available>
+								<Expansion code="Promo2" value="true"></Expansion>
+							</Available>
+						</Variant>
+						<Variant>
+							<Text>Foreboding ➜ Shadows of the Dahan</Text>
+							<Available>
+								<Expansion code="Promo2" value="true"></Expansion>
+							</Available>
+						</Variant>
+						<Variant>
+							<Text>Madness ➜ Shadows of the Dahan</Text>
+							<Available>
+								<Expansion code="JaggedEarth" value="true"></Expansion>
+							</Available>
+						</Variant>
+						<Variant>
+							<Text>Reach ➜ Shadows of the Dahan</Text>
+							<Available>
+								<Expansion code="JaggedEarth" value="true"></Expansion>
+							</Available>
+						</Variant>
+					</Variants>
+				</Item>
 				<Item>
 					<Text>Sharp Fangs Behind the Leaves</Text>
 					<Available>
 						<Expansion code="BranchAndClaw" value="true"></Expansion>
 					</Available>
 				</Item>
+				<Item>
+					<Text>Shifting Memory of Ages</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>Shroud of Silent Mist</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
 				<Item><Text>A Spread of Rampant Green</Text></Item>
+				<Item>
+					<Text>Starlight Seeks Its Form</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>Stone’s Unyielding Defiance</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
 				<Item><Text>Thunderspeaker</Text></Item>
-				<Item><Text>Vital Strength of Earth</Text></Item>
+				<Item>
+					<Text>Vengeance as a Burning Plague</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>Vital Strength of Earth</Text>
+					<Variants>
+						<Variant><Text>-</Text></Variant>
+						<Variant>
+							<Text>Might ➜ Earth’s Vitality</Text>
+							<Available>
+								<Expansion code="Promo2" value="true"></Expansion>
+							</Available>
+						</Variant>
+						<Variant>
+							<Text>Resilience ➜ Earth’s Vitality</Text>
+							<Available>
+								<Expansion code="JaggedEarth" value="true"></Expansion>
+							</Available>
+						</Variant>
+						<Variant>
+							<Text>Reach ➜ Shadows of the Dahan</Text>
+							<Available>
+								<Expansion code="JaggedEarth" value="true"></Expansion>
+							</Available>
+						</Variant>
+					</Variants>
+				</Item>
+				<Item>
+					<Text>Volcano Looming High</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
 			</Section>
 			<Section code="PlayerBoards">
 				<Heading>Player Boards</Heading>
@@ -102,6 +272,12 @@
 			<Section code="Adversary">
 				<Heading>Adversary</Heading>
 				<Randomise number="1"></Randomise>
+				<Item>
+					<Text>The Habsburg Monarchy (Livestock Colony)</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
 				<Item><Text>The Kingdom of Brandenburg-Prussia</Text></Item>
 				<Item><Text>The Kingdom of England</Text></Item>
 				<Item>
@@ -110,13 +286,49 @@
 						<Expansion code="BranchAndClaw" value="true"></Expansion>
 					</Available>
 				</Item>
+				<Item>
+					<Text>The Kingdom of Scotland</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
 				<Item><Text>The Kingdom of Sweden</Text></Item>
+				<Item>
+					<Text>The Tsardom of Russia</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
 			</Section>
 			<Section code="Scenario">
 				<Heading>Scenario</Heading>
 				<Randomise number="1"></Randomise>
 				<Item><Text>Blitz</Text></Item>
 				<Item><Text>Dahan Insurrection</Text></Item>
+				<Item>
+					<Text>Despicable Theft</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>A Diversity of Spirits</Text>
+					<Available>
+						<Expansion code="Promo2" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>Elemental Invocation</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>The Great River</Text>
+					<Available>
+						<Expansion code="JaggedEarth" value="true"></Expansion>
+					</Available>
+				</Item>
 				<Item><Text>Guard the Isle’s Heart</Text></Item>
 				<Item>
 					<Text>Powers Long Forgotten</Text>
@@ -135,6 +347,12 @@
 					<Text>Second Wave</Text>
 					<Available>
 						<Expansion code="BranchAndClaw" value="true"></Expansion>
+					</Available>
+				</Item>
+				<Item>
+					<Text>Varied Terrain</Text>
+					<Available>
+						<Expansion code="Promo2" value="true"></Expansion>
 					</Available>
 				</Item>
 				<Item>
